@@ -1,0 +1,69 @@
+/* font-family: 'DM Serif Display', serif;
+
+font-family: 'Karla', sans-serif;
+
+font-family: 'Oswald', sans-serif; */
+
+*, 
+*::before, 
+*::after{
+    box-sizing: border-box;
+    padding:0;
+}
+
+:root{
+    /* Colors */
+    --dark-violet: hsl(256, 26%, 20%);
+    --grayish-blue: hsl(216, 30%, 68%);
+    --very-dark-violet: hsl(270, 9%, 17%);
+    --dark-grayish-violet: hsl(273, 4%, 51%);
+    --very-light-gray: hsl(0, 0%, 98%);
+
+    /* Typography */
+
+    --dm-serif-display:'DM Serif Display', serif;
+    --karla:'Karla', sans-serif;
+    --oswald:'Oswald', sans-serif;
+
+    --light:400;
+    --bold:700;
+    --bolder:900;
+
+    --line-height:1.7;
+}
+
+body{
+    margin:0;
+    font-size:1em;
+    font-weight:var(--light);
+    font-family: var(--karla);
+    line-height: var(--line-height);
+}
+
+h1, h2, h3, h4{
+    font-family:var(--dm-serif-display);
+}
+
+ul{
+    padding:0;
+    margin:0;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+.container{
+    width:90%;
+    max-width:1250px;
+    margin:0 auto;
+}
