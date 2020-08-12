@@ -4,66 +4,96 @@ font-family: 'Karla', sans-serif;
 
 font-family: 'Oswald', sans-serif; */
 
-*, 
-*::before, 
-*::after{
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-    padding:0;
+    padding: 0;
 }
 
-:root{
-    /* Colors */
+:root {
+    /* Primary Colors */
     --dark-violet: hsl(256, 26%, 20%);
     --grayish-blue: hsl(216, 30%, 68%);
+
+    /* Neutral Colors */
     --very-dark-violet: hsl(270, 9%, 17%);
     --dark-grayish-violet: hsl(273, 4%, 51%);
     --very-light-gray: hsl(0, 0%, 98%);
-
+    --white: #ffffff;
+    --black: #000000;
     /* Typography */
 
-    --dm-serif-display:'DM Serif Display', serif;
-    --karla:'Karla', sans-serif;
-    --oswald:'Oswald', sans-serif;
+    --dm-serif-display: 'DM Serif Display', serif;
+    --karla: 'Karla', sans-serif;
+    --oswald: 'Oswald', sans-serif;
 
-    --light:400;
-    --bold:700;
-    --bolder:900;
+    --light: 400;
+    --bold: 700;
+    --bolder: 900;
 
-    --line-height:1.7;
+    --line-height: 1.7;
 }
 
-body{
+body {
     margin:0;
-    font-size:1em;
-    font-weight:var(--light);
+    font-size: 1em;
+    font-weight: var(--light);
     font-family: var(--karla);
     line-height: var(--line-height);
 }
 
-h1, h2, h3, h4{
-    font-family:var(--dm-serif-display);
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--dm-serif-display);
 }
 
-ul{
-    padding:0;
-    margin:0;
+ul {
+    padding: 0;
+    margin: 0;
 }
 
-li{
+li {
     list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-img{
-    display:block;
-    max-width:100%;
+img {
+    display: block;
+    max-width: 100%;
 }
 
-.container{
-    width:90%;
-    max-width:1250px;
-    margin:0 auto;
+.container {
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+/* Navigation Styles */
+
+.header {
+    background:var(--black);
+    padding: 2em 0;
+    display:flex;
+    justify-content: space-between;
+}
+
+.burger div {
+    width: 23px;
+    height: 1px;
+    background-color: var(--black);
+}
+
+.burger .line2,
+.burger .line3 {
+    margin-top: 5px;
+}
+
+.nav__list {
+    display: none;
 }
