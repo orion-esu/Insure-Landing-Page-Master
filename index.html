@@ -13,17 +13,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Insure landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
+  <!-- 👍 -->
 </head>
 
 <body>
@@ -33,7 +23,7 @@
 
     <div class="container">
 
-    <!-- Mavigation Menu -->
+    <!-- Navigation Menu -->
 
       <nav class="nav">
 
@@ -43,23 +33,24 @@
           </a>
         </div>
 
+
+        <ul class="nav-links">
+
+          <li class="nav__item hover"><a href="#">How we work</a></li>
+
+          <li class="nav__item hover"><a href="#">Blog</a></li>
+
+          <li class="nav__item hover"><a href="#">Account</a></li>
+
+          <li class="nav__item"><a href="#" class="hvr-bounce-to-bottom">View plans</a></li>
+
+        </ul>
+
         <div class="burger">
           <div class="line1"></div>
           <div class="line2"></div>
           <div class="line3"></div>
         </div>
-
-        <ul class="nav__list">
-
-          <li class="nav__item"><a href="#">How we work</a></li>
-
-          <li class="nav__item"><a href="#">Blog</a></li>
-
-          <li class="nav__item"><a href="#">Account</a></li>
-
-          <li class="nav__item"><a href="#">View plans</a></li>
-
-        </ul>
 
       </nav>
     </div>
@@ -73,8 +64,6 @@
     <!-- Intro Section -->
 
     <section class="intro">
-
-      
       
       <div class="intro__image">
         
@@ -83,8 +72,8 @@
                             
       </div>
                           
-      <div class="container">
-        <div class="intro__text">
+      <div class="intro__text">
+        <div class="container">
 
           <h1>Humanizing your insurance.</h1>
 
@@ -148,17 +137,17 @@
     </section>
 
     <!-- About Section -->
-    <section class="about">
+    <div class="container">
+      <section class="about">
 
-      <div class="container">
 
         <h2>Find out more about how we work</h2>
 
         <button type="submit" class="about__btn">How we work</button>
 
-      </div>
-
-    </section>
+        
+      </section>
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -237,18 +226,19 @@
 
         </div>
       </div>
+      <div class="attribution">
+        <div class="container">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by &copy; <a href="#" target="_blank">Esu (The code boy)</a>.
+        </div>
+      </div>
     </footer>
 
   </main>
 
 
-  <div class="attribution">
-    <div class="container">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by &copy; <a href="#" target="_blank">Esu (The code boy)</a>.
-    </div>
-  </div>
-
+ 
+  <script src="script.js" async defer></script>
 </body>
 
 </html>
