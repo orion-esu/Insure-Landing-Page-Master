@@ -73,8 +73,8 @@ img {
 /* Active State*/
 
 button{
-    width:40%;
-    padding:.6em 0;
+    width:50%;
+    padding:.5em 0;
     margin-top:1.5em;
     text-transform: uppercase;
     background:transparent;
@@ -144,7 +144,7 @@ button{
 }
 
 .box h3,
-.footer__link{
+.features h2{
     color:var(--dark-violet);
 }
 
@@ -346,18 +346,35 @@ nav {
     padding:4em 0;
 }
 
+.intro__text h1{
+    font-size:2.5rem;
+    line-height:1.4;
+    margin-bottom:.5em;
+}
+.intro__btn,
+.about__btn{
+    font-size:.9rem;
+    letter-spacing: 4px;
+}
+
 /* Feature Styling */
 
 .features{
     padding:6em 0 5em 0;
 }
 
+.features h2{
+    font-size:2.5rem;
+    font-weight:var(--bold);
+}
+
 .features h2::before{
     content:'';
     height: 1px;
     width:30%;
-    margin: 0 auto 1em auto;
+    margin: 0 auto .5em auto;
     display:block;
+    background-color:var(--dark-grayish-violet);
 }
 
 .features__box,
@@ -367,6 +384,8 @@ nav {
 
 .box h3{
     margin-top:1.5em;
+    font-size:1.5rem;
+    font-weight:var(--light);
 }
 
 .box p {
@@ -379,11 +398,20 @@ nav {
 
 /* About Styling */
 
-.about{
-    padding:2em 0;
+.about {
+    padding:4em 1em;
     margin-top:2em;
 }
+.about h2{
+    font-size:2.5rem;
+    font-weight:var(--bold);
+    line-height:1.2;
+    margin-bottom:.6em;
+}
 
+.about__btn{
+    letter-spacing: 2px;
+}
 /* Footer Styling */
 
 footer{
@@ -416,13 +444,24 @@ footer{
     margin-top:2em;
 }
 
-.footer__items h4{
+.footer__items .items h4 {
     margin-bottom:2em;
+    font-weight:var(--light);
+    text-transform:uppercase;
+    font-size: .85rem;
+    letter-spacing: 1px;
+    font-family:var(--karla);
 }
-
 
 /* Footer Links and SVG Styling */
 
+.footer__link {
+    color:var(--very-dark-violet);
+    text-transform: uppercase;
+    font-weight: var(--bold);
+    font-size: .9rem;
+    letter-spacing: 1px;
+}
 .svg{
     fill:var(--dark-grayish-violet);
 }
@@ -440,11 +479,15 @@ footer{
 
 /* Attribution Styling */
 
-.attribution {
-    font-size: 11px;
+  .attribution {
     margin:2em 0;
+    font-size: 1.1rem;
+    color: var(--dark-grayish-violet);
   }
-
   .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--very-dark-violet);
+    font-weight: var(--bold);
+  }
+  span {
+    /* text-transform: uppercase; */
   }
