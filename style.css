@@ -74,11 +74,11 @@ img {
 
 button{
     width:50%;
-    padding:.5em 0;
+    padding:1em 0;
     margin-top:1.5em;
     text-transform: uppercase;
     background:transparent;
-    border:1px solid var(--very-light-gray);
+    border:2px solid var(--very-light-gray);
     color:var(--very-light-gray);
     cursor:pointer;
 }
@@ -344,17 +344,25 @@ nav {
 
 .intro__text{
     padding:4em 0;
+    background-image:url(./images/bg-pattern-intro-left-mobile.svg);
+    background-position:top left;
+    background-repeat:no-repeat;
+    position:relative;
 }
-
+.intro__text::after{
+    content: url(./images/bg-pattern-intro-right-mobile.svg);
+    position:absolute;
+    right:0;
+    top:67%;
+}
 .intro__text h1{
     font-size:2.5rem;
     line-height:1.4;
     margin-bottom:.5em;
 }
-.intro__btn,
-.about__btn{
+.intro__btn{
     font-size:.9rem;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
 }
 
 /* Feature Styling */
@@ -399,18 +407,22 @@ nav {
 /* About Styling */
 
 .about {
-    padding:4em 1em;
-    margin-top:2em;
+    margin:2em auto 0 auto;
+    padding:4em 1.5em;
+    background-image:url(./images/bg-pattern-how-we-work-mobile.svg);
+    background-repeat:no-repeat;
+    background-position:top right;
 }
 .about h2{
     font-size:2.5rem;
-    font-weight:var(--bold);
+    font-weight:var(--light);
     line-height:1.2;
     margin-bottom:.6em;
 }
 
 .about__btn{
     letter-spacing: 2px;
+    line-height:1.5;
 }
 /* Footer Styling */
 
@@ -418,6 +430,8 @@ footer{
     margin-top:5em;
     padding-top:5em;
     background-color:var(--very-light-gray);
+    background-image:url(./images/bg-pattern-footer-mobile.svg);
+    background-repeat: no-repeat;
 }
 
 .footer__icons > img{
@@ -487,7 +501,4 @@ footer{
   .attribution a {
     color: var(--very-dark-violet);
     font-weight: var(--bold);
-  }
-  span {
-    /* text-transform: uppercase; */
   }
