@@ -35,6 +35,10 @@ font-family: 'Oswald', sans-serif; */
     --line-height: 1.7;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: 1em;
     font-weight: var(--light);
@@ -176,6 +180,9 @@ header {
     align-items: center;
     min-height: 10vh;
     font-family: var(--dm-serif-display);
+    position:fixed;
+    z-index:2;
+    width:100%;
 }
 
 nav {
@@ -200,7 +207,7 @@ nav {
     }
 
     .nav-links {
-        position: absolute;
+        position: fixed;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -210,13 +217,14 @@ nav {
         right: 0;
         top: 10vh;
         width: 100%;
-        height: calc(100vh - 10vh);
+        height: 100%;
         background-color: var(--very-dark-violet);
         background-image: url(./images/bg-pattern-mobile-nav.svg);
         background-repeat: no-repeat;
         background-position: center bottom;
         background-size: 100%;
         transform: translateX(100%);
+        /* z-index:1; */
         transition: transform .5s ease;
     }
 
@@ -554,7 +562,9 @@ footer {
     .burger {
         display: none;
     }
-
+    header{
+        position: sticky;
+    }
     .nav-links {
         display: flex;
         gap: 1.2em;
