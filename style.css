@@ -465,6 +465,7 @@ nav {
     font-weight: var(--light);
     line-height: 1.2;
     margin-bottom: .6em;
+    width:50%;
 }
 
 .about__btn {
@@ -699,6 +700,7 @@ footer {
 
 @media (min-width:53.125em) {
 
+
     .nav-links{
         gap:2.5em;
     }
@@ -706,6 +708,9 @@ footer {
         text-align: left;
     }
 
+    .features h2{
+        font-size:3rem;
+    }
     .features h2::before {
         margin: 0 0 1em 0;
         width:20%;
@@ -755,6 +760,10 @@ footer {
         padding: 6em 0;
         z-index:-1;
     }
+    
+    .intro__text h1{
+        font-size:3.5rem;
+    }
     .intro{
         position: relative;
     }
@@ -792,6 +801,11 @@ footer {
     .about{
         background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
     }
+
+    .about-text{
+        font-size:2.7rem;
+    }
+
     footer{
         background-image:url(./images/bg-pattern-footer-desktop.svg);
     }
