@@ -465,7 +465,6 @@ nav {
     font-weight: var(--light);
     line-height: 1.2;
     margin-bottom: .6em;
-    width:50%;
 }
 
 .about__btn {
@@ -800,6 +799,7 @@ footer {
     
     .about{
         background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
+        background-size: contain;
     }
 
     .about-text{
@@ -808,5 +808,11 @@ footer {
 
     footer{
         background-image:url(./images/bg-pattern-footer-desktop.svg);
+    }
+}
+
+@media (min-width:62.5em){
+    .about-text{
+        font-size:3rem;
     }
 }
